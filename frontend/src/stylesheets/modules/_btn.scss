@@ -18,4 +18,10 @@
     border: 1px solid $PRIMARY_BLUE;
     color: $PRIMARY_BLUE;
   }
+
+  &.tweet {
+    color: $WHITE;
+    background-color: $PRIMARY_ORANGE;
+    border: 1px solid $PRIMARY_ORANGE;
+  }
 }

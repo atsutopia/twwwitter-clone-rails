@@ -3,6 +3,7 @@
   &:not(:root) {
     position: relative;
     height: 53px;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
   }
 
   > .content {
@@ -10,6 +11,10 @@
     height: 100%;
     margin: 0 auto;
     position: relative;
+
+    &.wide {
+      width: 800px;
+    }
 
     > .logo {
       position: absolute;
@@ -29,6 +34,8 @@
       right: 0;
       transform:  translateY(-50%);
       margin-right: 15px;
+      background-color: $PRIMARY_BLUE;
+      min-height: 30px;
     }
   }
 }
