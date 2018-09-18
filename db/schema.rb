@@ -13,12 +13,14 @@
 ActiveRecord::Schema.define(version: 20180907113121) do
 
   create_table "users", force: :cascade do |t|
-    t.string "username", limit: 128
+    t.string "account", limit: 128
+    t.string "username"
     t.string "introduction"
     t.text "icon_url"
+    t.text "cover_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["username"], name: "index_users_on_username"
+    t.index ["account"], name: "index_users_on_account"
   end
 
 end
