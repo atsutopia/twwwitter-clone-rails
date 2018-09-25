@@ -3,7 +3,7 @@
     <div class="content wide">
       <img class="logo" src="/assets/images/icons/tw-icon.svg" />
       <button class="submit btn tweet">ツイート</button>
-      <button class="submit btn default logout">ログアウト</button>
+      <%= link_to "ログアウト", session_path, method: :delete, class: "submit btn default logout" %>
     </div>
   </header>
   <div class="hero">
