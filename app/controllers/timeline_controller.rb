@@ -5,5 +5,6 @@ class TimelineController < ApplicationController
 
     # TODO: ユーザー仮
     @user = User.first
+    @tweets = @user.tweets.order(created_at: :desc)
   end
 end
