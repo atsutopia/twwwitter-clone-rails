@@ -1,1 +1,2 @@
-console.log("Application")
+import Rails from 'rails-ujs'
+Rails.start()

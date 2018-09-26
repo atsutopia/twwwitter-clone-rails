@@ -31,11 +31,19 @@
       display: block;
       position: absolute;
       top: 50%;
-      right: 0;
+      right: 120px;
       transform:  translateY(-50%);
       margin-right: 15px;
       background-color: $PRIMARY_BLUE;
       min-height: 30px;
+      line-height: 30px;
+      padding: 0 16px;
+      width: 120px;
+    }
+
+    > .logout {
+      background-color: $WHITE;
+      right: 0;
     }
   }
 }
