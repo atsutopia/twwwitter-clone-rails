@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   resources :users
   resources :timeline, only: :index
   resource :session, only: [:new, :create, :destroy]
+  resources :tweets, only: [:new, :create]
 end
