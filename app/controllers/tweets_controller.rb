@@ -3,7 +3,7 @@ class TweetsController < ApplicationController
     @tweet = Tweet.new
   end
 
-   def create
+  def create
     ## TODO: 仮ユーザー
     user = User.first
     @tweet = user.tweets.build(tweet_params)
@@ -12,7 +12,7 @@ class TweetsController < ApplicationController
     end
   end
 
-   private
+  private
   def tweet_params
     params.require(:tweet).permit(
       :tweet
