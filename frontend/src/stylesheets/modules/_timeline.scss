@@ -12,13 +12,14 @@
 
   > .content {
     flex-grow: 1;
+    width: 100%;
     margin-left: 16px;
   }
 }
 
 .sidebar {
   &:not(:root) {
-    min-width: 300px;
+    width: 300px;
     min-height: 80vh;
   }
 }
