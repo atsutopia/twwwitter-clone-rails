@@ -2,7 +2,7 @@
   <header class="header">
     <div class="content wide">
       <img class="logo" src="/assets/images/icons/tw-icon.svg" />
-      <button class="submit btn tweet">ツイート</button>
+      <%= link_to "ツイート", new_tweet_path, class: "submit btn tweet" %>
       <%= link_to "ログアウト", session_path, method: :delete, class: "submit btn default logout" %>
     </div>
   </header>
@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="content">
-      <% @tweets.each do |val| %>
+        <% @tweets.each do |val| %>
           <div class="tweet">
             <div class="content">
               <div class="avatar"><img class="img" src="/assets/images/icons/lion.svg" /></div>
@@ -50,7 +50,7 @@
                 <div class="header">
                   <div class="item name"><%= @user.username %></div>
                   <div class="item account"><%= @user.account %></div>
-                  <div class="item date">2017年10月9日</div>
+                  <div class="item date"><%= @user.created_at.strftime("%Y年%m月%d日") %></div>
                 </div>
                 <div class="text"> <%= val.tweet %></div>
               </div>
